@@ -1,0 +1,84 @@
+/* ALUNAS: Kawany Helen, Laís Vitoria e Shamara karolina - 3º E */
+
+body {
+    margin: 0; /* força a margem preta a ficar no lugar */
+    height: 100vh; /* adaptação da imagem */
+    display: flex; /* exibição flexivel */ 
+    align-items: center; /* alinha os itens no centro */
+    justify-content: center; /* coloca os itens no centro */
+    background-color: black; /* alterou a cor de fundo, para o preto */
+    overflow: hidden; /* determina que o conteúdo não passe da barra de rolagem */
+}
+
+.container {
+    font-size: 10px; /* define o tamanho da fonte */
+    width: 40em; /* define o tamanho da largura */
+    height: 40em; /* define o tamanho da altura */
+    position: relative; /* define a posição, sendo ela relativa */
+}
+
+.sun {
+    position: absolute; /* define a posição, sendo ela absoluta */
+    top: 15em; /* define a posição da estrutura em questão de cima ou baixo */
+    left: 15em; /* define a posição da estrutura em questão de esquerda ou direita */
+    width: 10em; /* define o tamanho da largura */
+    height: 10em; /* define o tamanho da altura */
+    background-color: yellow; /* define aa cor do círculo */
+    border-radius: 50%; /* define o quão redondo vai ficar a estrutura */
+    box-shadow: 0 0 3em white; /* cor da sombra */
+}
+
+.earth,
+.moon {
+    position: absolute; /* define a posição, sendo ela absoluta */
+    border-style: solid; /* define o tipo da estrutura */
+    border-color: white transparent transparent transparent; /* define a cor da borda */
+    border-width: 0.1em 0.1em 0 0; /* define a largura da borda */
+    border-radius: 50%; /* define o quão redondo vai ficar a estrutura */
+}
+
+.earth { 
+    top: 5em; /* define a posição da estrutura em questão de cima ou baixo */
+    left: 5em; /* define a posição da estrutura em questão de esquerda ou direita  */
+    width: 30em; /* define a largura */
+    height: 30em; /* definee a altura */
+    animation: orbit 36.5s linear infinite; /* define o tempo da animação da óbita da terra no sol*/
+}
+
+.moon {
+    top: 0; /* define a posição da estrutura em questão de cima ou baixo */
+    right: 0; /* define a posição da estrutura em questão de esquerda ou direita */
+    width: 8em; /* define a largura */
+    height: 8em; /* definee a altura */
+    animation: orbit 2.7s linear infinite; /* define o tempo da aanimação da óbita da lua na terra */
+
+}
+
+.earth::before,
+.moon::before {
+    content: ""; /* */
+    position: absolute; /* define a posição, sendo ela absoluta */
+    border-radius: 50%; /* define o quão redondo vai ficar a estrutura */
+}
+
+.earth::before {
+    top: 2.8em; /* define a posição da estrutura em questão de cima ou baixo */
+    right: 2.8em; /* define a posição da estrutura em questão de esquerda ou direita */
+    width: 3em;  /* define a largura */
+    height: 3em; /* definee a altura */
+    background-color: rgb(6, 82, 3); /* define a cor da terra */ 
+}
+
+.moon::before {
+    top: 0.8em; /* define a posição da estrutura em questão de cima ou baixo */
+    right: 0.2em; /* define a posição da estrutura em questão de esquerda ou direita  */
+    width: 1.2em; /* define a largura */
+    height: 1.2em; /* definee a altura */
+    background-color: silver; /* define a cor da lua */
+}
+
+@keyframes orbit {
+    to {
+        transform: rotate(360deg); /* faz com que as estruturas girem */
+    }
+}
