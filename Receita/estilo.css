@@ -1,0 +1,17 @@
+body{
+   background-color: darkgray;
+
+}
+h1{
+    font-weight: bold;
+}
+h3{
+    color: #0066ff;
+}
+div.box {
+	width: 450px;
+	display: inline-block;
+}
+p.centralizado{
+    text-align: center;
+}
