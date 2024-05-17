@@ -1,0 +1,45 @@
+corpo {
+    fundo :  gradiente linear ( 180 graus ,  # e707d1  0 % ,  # ff0202  100 % );
+    exibição : flexível;
+    justificar-conteúdo : centro;
+    alinhar itens : centro;
+    altura :  100 vh ;
+}
+
+corpo {
+    família de fontes :  "Concert One" , sem serifa;
+    peso da fonte :  400 ;
+    estilo da fonte : normal;
+    exibição : flexível;
+    justificar-conteúdo : centro;
+    alinhar itens : centro;
+    altura :  100 vh ;
+    margem :  0 ;
+    cor : branco antigo;
+      }
+
+. contêiner {
+    alinhamento de texto : centro;
+}
+
+entrada [ tipo = "texto" ] {
+    preenchimento :  8 px ;
+    margem inferior :  10 px ;
+}
+
+botão {
+    preenchimento :  8px 20px  ;​​
+    cor de fundo :  # 000000 ;
+    cor :  #ffffff ;​
+    fronteira : nenhuma;
+    cursor : ponteiro;
+}
+
+botão : passar o mouse {
+    cor de fundo :  # ffffff ;
+}
+
+p {
+    tamanho da fonte :  18 px ;
+    margem superior :  20 px ;
+}
