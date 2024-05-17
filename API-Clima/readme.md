@@ -1,6 +1,6 @@
 # Projeto API Clima
 
-##Discrição
+## Discrição
 
 Projeto desenvolvido nas aulas do curso de Informática para internet. Nesse projeto desenvolvemos uma aplicação que oferece o clima atual a partir das cidades informadas.Ele consome as APIs Ope Weather, Flog API.
 
