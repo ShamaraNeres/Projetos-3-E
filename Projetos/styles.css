@@ -1,0 +1,107 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #f0c426; /* Cor roxa */
+    color: #fff;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 900px;
+    font-size: 40px;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Altura mínima do conteúdo principal */
+}
+
+/* Estilos do conteúdo principal */
+
+main {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+main h2 {
+    margin-bottom: 1rem;
+}
+
+/* Estilos para os ícones */
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.icon-container i {
+    font-size: 3rem;
+    color: #800080; /* Cor roxa para os ícones */
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    /* max-width: 800px; */
+    margin: 0 auto;
+}
+.flex > div{
+    flex: 1 1 50px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilos do cabeçalho */
+div.faixa {
+    background-color: #e22a11; /* Cor roxa */
+    color: #fff;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+div.faixa h1 {
+    margin: 0;
+    font-weight: 900px;
+    font-size: 40px;
+}
+
